@@ -1,0 +1,60 @@
+body{
+    margin-bottom: 10px;
+}
+h2{
+    text-align: center;
+    color: blueviolet;
+}
+img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.main{
+    display: flex;
+    gap: 37px;
+    margin: 10px;
+    flex-wrap: wrap; 
+}
+.eday{
+   text-align: center;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.fbox1,.fbox2,.fbox3{
+    width: 30%;
+    height:fit-content    
+}
+label,p{
+    color: rebeccapurple ;
+}
+.tag{
+    text-align: center;
+    color:rebeccapurple ;
+    font-size: xx-large;
+}
+#ast{
+    display: block;
+    margin: 0 auto;
+}
+*{
+    font-family:'Trebuchet MS';
+    font-weight: bolder;
+}
+#day{
+    border-radius: 20px;
+}
+@media (max-width: 965px) {
+    .fbox1{
+        width: 100%;
+    }
+    .fbox2{
+        width: 100%;
+    }
+    .fbox3{
+        width: 100%;
+    }
+}

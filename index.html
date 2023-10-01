@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Astrology Online</title>
+  </head>
+  <body>
+    <h2>Astrology online</h2>
+    <img
+      src="https://t3.ftcdn.net/jpg/03/46/36/48/360_F_346364876_GatpVrAFsgI62FoUAGiDdbIm0xN4iAsp.jpg"
+      alt="astro img"
+      id="ast"
+    />
+
+    <p class="tag">Prediction of Yesterday, Today & Tomorrow Zodiac Benefits</p>
+
+    <div class="main">
+      <div class="input1">
+        <img
+          src="https://cdn.pixabay.com/photo/2022/11/26/11/45/aries-7617681__340.jpg"
+          alt="aries img"
+        /><br />
+        <button
+          onclick="go1()"
+          id="aries"
+          class="form-control born"
+          value="aries"
+        >
+          Aries
+        </button>
+      </div>
+
+      <div class="input2">
+        <img
+          src="https://cdn.pixabay.com/photo/2019/07/31/06/03/zodiac-sign-4374405__340.jpg"
+          alt="taurus img"
+        /><br />
+        <button
+          onclick="go2()"
+          id="taurus"
+          class="form-control born"
+          value="taurus"
+        >
+          Taurus
+        </button>
+      </div>
+
+      <div class="input3">
+        <img
+          src="https://www.shutterstock.com/image-vector/gemini-sign-zodiac-background-beautiful-260nw-1444434599.jpg"
+          alt="Gemini img"
+        /><br />
+        <button onclick="go3()" id="gemini" class="form-control" value="gemini">
+          Gemini
+        </button>
+      </div>
+
+      <div class="input4">
+        <img
+          src="https://cdn.pixabay.com/photo/2022/11/26/11/45/cancer-7617683_960_720.jpg"
+          alt="Cancer img"
+        /><br />
+        <button onclick="go4()" id="cancer" class="form-control" value="cancer">
+          Cancer
+        </button>
+      </div>
+
+      <div class="input5">
+        <img
+          src="https://cdn.pixabay.com/photo/2022/11/26/11/45/leo-7617686_960_720.jpg"
+          alt="Leo img"
+        /><br />
+        <button onclick="go5()" id="leo" class="form-control" value="leo">
+          Leo
+        </button>
+      </div>
+
+      <div class="input6">
+        <img
+          src="https://cdn.pixabay.com/photo/2022/11/26/11/45/virgo-7617694_960_720.jpg"
+          alt="Virgo img"
+        /><br />
+        <button onclick="go6()" id="virgo" class="form-control" value="virgo">
+          Virgo
+        </button>
+      </div>
+
+      <div class="input7">
+        <img
+          src="https://imgk.timesnownews.com/story/Libra_Yearly_Prediction_2021.jpg?tr=w-1200,h-900"
+          alt="Libra img"
+        /><br />
+        <button onclick="go7()" id="libra" class="form-control" value="libra">
+          Libra
+        </button>
+      </div>
+
+      <div class="input8">
+        <img
+          src="https://cdn.pixabay.com/photo/2022/11/26/11/45/scorpio-7617691_960_720.jpg"
+          alt="Scorpio img"
+        /><br />
+        <button
+          onclick="go8()"
+          id="scorpio"
+          class="form-control"
+          value="scorpio"
+        >
+          Scorpio
+        </button>
+      </div>
+
+      <div class="input9">
+        <img
+          src="https://cdn.pixabay.com/photo/2022/11/26/11/45/sagittarius-7617690__340.jpg"
+          alt="Sagittarius img"
+        /><br />
+        <button
+          onclick="go9()"
+          id="sagittarius"
+          class="form-control"
+          value="sagittarius"
+        >
+          Sagittarius
+        </button>
+      </div>
+
+      <div class="input10">
+        <img
+          src="https://cdn.pixabay.com/photo/2022/11/26/11/45/capricorn-7617684__340.jpg"
+          alt="Capricorn img"
+        /><br />
+        <button
+          onclick="go10()"
+          id="capricorn"
+          class="form-control"
+          value="capricorn"
+        >
+          Capricorn
+        </button>
+      </div>
+
+      <div class="input11">
+        <img
+          src="https://static.tnn.in/photo/msid-95891215,imgsize-491555,width-100,height-200,resizemode-75/95891215.jpg"
+          alt="Aquarius img"
+        /><br />
+        <button
+          onclick="go11()"
+          id="aquarius"
+          class="form-control"
+          value="aquarius"
+        >
+          Aquarius
+        </button>
+      </div>
+      <div class="input12">
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/004/587/549/original/pisces-horoscope-symbol-in-twelve-zodiac-constellation-a-flat-line-zodiac-icons-isolated-on-black-background-astrology-and-mythology-collection-in-free-vector.jpg"
+          alt="Pisces img"
+        /><br />
+        <button
+          onclick="go12()"
+          id="pisces"
+          class="form-control"
+          value="pisces"
+        >
+          Pisces
+        </button>
+      </div>
+    </div>
+    <br />
+    <div class="eday">
+      <p>
+        Note: Enter "yesterday" or "today" or "tomorrow" and select your zodiac
+        sign
+      </p>
+      <input type="text" id="day" required placeholder="Enter Day" />
+    </div>
+    <br />
+
+    <div class="flex-container">
+      <div class="fbox1">
+        <label for="cdate">Current Date</label>
+        <input type="text" class="form-control" id="cdate" disabled /><br />
+
+        <label for="ltime">Lucky Time</label>
+        <input type="text" class="form-control" id="ltime" disabled /><br />
+
+        <label for="lnumber">Lucky Number</label>
+        <input type="text" class="form-control" id="lnumber" disabled />
+      </div>
+      <div class="fbox2">
+        <label for="compa">Compatibility</label>
+        <input type="text" class="form-control" id="compa" disabled /><br />
+
+        <label for="col">Colour</label>
+        <input type="text" class="form-control" id="col" disabled /><br />
+
+        <label for="moo">Mood</label>
+        <input type="text" class="form-control" id="moo" disabled />
+      </div>
+      <div class="fbox3">
+        <label for="des">Description</label>
+        <textarea
+          name=""
+          id="des"
+          class="form-control"
+          rows="5"
+          disabled
+        ></textarea>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
